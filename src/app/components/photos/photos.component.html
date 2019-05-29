@@ -1,0 +1,18 @@
+<mat-grid-list cols="4" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let photo of photos">
+        <mat-list role="list">
+            <mat-list-item role="listitem"><a [routerLink]="['/photo', photo.id]">{{photo.title}}</a> </mat-list-item>
+
+
+        </mat-list>
+
+        <mat-list role="list">
+
+            <mat-list-item role="listitem"><img src="{{photo.thumbnail}}"></mat-list-item>
+
+        </mat-list>
+
+
+    </mat-grid-tile>
+
+</mat-grid-list>
